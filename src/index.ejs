@@ -2,7 +2,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-    <title>Webpack TypeScript BabylonJS Starter</title>
+    <title>Viviscim: la Visite Virtuelle Scénographique Immersive</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/logoViviscimfavicon.png" />
+    <meta name="description" property="og:description"
+    content="Ouvrez au monde entier les décors de vos spectacles en 360° et en Réalité Virtuelle">
     <style>
         html, body {
             overflow: hidden;
@@ -13,6 +18,7 @@
         }
 
         #renderCanvas {
+            position: absolute;
             width   : 100%;
             height  : 100%;
             touch-action: none;
@@ -20,6 +26,35 @@
     </style>
 </head>
 <body>
-    <canvas id="renderCanvas"></canvas>
+    
+    <section class="container">
+        <div class="logo">
+            <img width="50px" src="./assets/img/logoViviscimWhite.png" alt="logo viviscim">
+        </div>
+        <div class="">
+            <h2 class="vr">Réalité Virtuelle disponible - <span class="italic">WebVRMode</span> </h2>
+        </div>
+        <div class="titles">
+            <h1 class="bigTitle">Viviscim</h1>
+            <div class="containerLogo">
+                <h2 class="smallTitle logoBjorn"> by collectif bjorn</h2>
+                <a class="plus" target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Afa194833-432f-4f2a-93bf-4b6c313cdd04">En savoir plus</a>
+            </div>
+    
+            <h2 class="smallTitle">La Visite Virtuelle Scénographique Immersive</h2>
+            <h2 class="smallTitle2">Ouvrez au monde entier les décors de vos spectacles en 360° et en Réalité Virtuelle</h2>
+        
+            <h2 class="smallTitle italic">The Immersive Scenographic Virtual Tour</h2>
+            <h2 class="smallTitle italic">Present to the world the set designs of your shows in 360° and Virtual Reality</h2>
+            <div class="containerLogo justify">
+                <a target="_blank" href="https://fr.surveymonkey.com/r/9RVV89M"><h2 class="form btn">Participez à l'aventure UX !</h2></a>
+                <a href="mailto:collectifbjorn@gmail.com"><h2 class="contact btn">Contactez-nous</h2></a>
+            </div>
+        </div>
+        <h3 class="legend">Opéra Orchestre National Montpellier | Don pasquale, Donizetti | Valentin Schwarz - Andrea Cozzi, 2019</h3>
+        <canvas id="renderCanvas"></canvas>
+    </section>
+    
+
 </body>
 </html>
